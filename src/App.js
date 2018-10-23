@@ -1,28 +1,34 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import ConversationList from "./conversationlist/conversationlist";
+import Messages from "./messages/messages";
+import Header from "./headers/header";
+import Search from "./headers/search";
+import "./App.css";
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+	constructor(props) {
+		super(props);
+		this.state = {
+			sources: [],
+			test: String.raw`C:\Users\siena\Documents\FacebookMessages10.15.18\jsontest\FilipBicki_9568d55edb`,
+			data: null,
+		};
+	}
+
+	getJSON() {
+		return null;
+	}
+
+	render() {
+		return(
+			<div className="wrapper">
+		      <ConversationList />
+		      <Messages />
+		      <Header />
+		      <Search />
+		    </div>
+		);
+	}
+};
 
 export default App;

@@ -1,0 +1,7 @@
+.Header {
+  grid-area: header;
+}
+
+.Search {
+	grid-area: search;
+}
