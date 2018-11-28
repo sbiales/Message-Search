@@ -1,3 +1,35 @@
+:root {
+	--rowNum: 1;
+}
+
 #conversationlist {
   grid-area: left;
+}
+
+.conversationnode {
+	background: white;
+	height: 60px;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.conversationwrapper {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--rowNum), 60px);
+  height: calc(100vh - 106px);
+  grid-gap: 0px;
+
+}
+
+.conversationcontainer {
+  border: 1px solid olive;
+  background: #f5f5f5;
+  color: #333;
+  padding: 0px;
+  margin: 0px 0px 10px 10px;
+  height: calc(100vh - 74px);
+  overflow-y: auto;
 }

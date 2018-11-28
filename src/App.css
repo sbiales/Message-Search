@@ -10,12 +10,8 @@
   	"left right"
 }
 
-.container {
-  border: 2px solid black;
-  background: #f5f5f5;
-  color: #333;
-  margin: 0px;
-  padding: 20px;
-  height: calc(100vh - 106px);
-  overflow-y: auto;
+.panewrap {
+	width: 100%;
+	height: 100%;
+	background: olive;
 }

@@ -1,3 +1,13 @@
 .Messages {
   grid-area: right;
 }
+
+.messagescontainer {
+  border: 1px solid olive;
+  background: #f5f5f5;
+  color: #333;
+  padding: 0px;
+  margin: 0px 10px 10px 0px;
+  height: calc(100vh - 74px);
+  overflow-y: auto;
+}
